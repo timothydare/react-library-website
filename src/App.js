@@ -1,9 +1,9 @@
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./pages/Home";
-import Books from "./pages/Books"
-import { books } from './data'
+import Books from "./pages/Books";
+import { books } from './data';
 import BookInfo from "./pages/BookInfo";
 import Cart from "./pages/Cart";
 import React, { useEffect, useState } from "react";
@@ -35,7 +35,7 @@ function App() {
     <div className="App">
       <Nav numberOfItems={numberOfItems()}/>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/react-library-website" element={<Home />} />
         <Route path="/books" element={<Books books={books} />} />
         <Route path="/books/:id" element={<BookInfo books={books} addToCart={addToCart} cart={cart}/>} />
         <Route path="/cart" element={<Cart books={books} cart={cart} changeQuantity={changeQuantity} removeItem={removeItem} />} />

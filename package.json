@@ -1,6 +1,7 @@
 {
   "name": "react-library-app",
   "version": "0.1.0",
+  "homepage": "https://timothydare.github.io/react-library-website/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
